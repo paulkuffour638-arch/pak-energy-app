@@ -1,16 +1,25 @@
 [app]
-title = PakEnergyApp
+title = PAX Energy Tech Hub
 package.name = pakenergy
-package.domain = io.github.paulkuffour638
+package.domain = org.paulkuffour
+
 source.dir = .
-source.include_exts = py,png,jpg,kv,atlas
-version = 0.1
-requirements = python3,kivy
+source.include_exts = py,png,jpg,kv,atlas,txt
+
+version = 1.0
+requirements = python3,kivy,fpdf2
+
+orientation = portrait
+fullscreen = 0
+
+# icon.filename = %(source.dir)s/pak_logo.png  # ← UNCOMMENT ONLY IF YOU UPLOAD THIS FILE!
+
+android.permissions = WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
 android.api = 33
+android.minapi = 21
 android.ndk = 25b
-android.sdk = 24
-android.arch = arm64-v8a,armeabi-v7a
-android.apptheme = @android:style/Theme.Holo.Light
+android.accept_sdk_license = True
+
 [buildozer]
 log_level = 2
 warn_on_root = 0
